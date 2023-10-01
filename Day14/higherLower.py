@@ -17,11 +17,13 @@ def check_answer(guess, a_followers, b_followers):
 
 score = 0
 shouldRun = True
+
+# Logic so that B becomes A in next loop
 accountB = random.choice(data)
 while shouldRun:
 
     print(art.logo)
-
+    # Logic so that B becomes A in next loop
     accountA = accountB
     accountB = random.choice(data)
 
